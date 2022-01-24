@@ -54,18 +54,18 @@ header {
   width: 100%;
 }
 
-.task {
+.tool {
   background: #f4f4f4;
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
 }
 
-.task.reminder {
+.tool.unavailable {
   border-left: 5px solid green;
 }
 
-.task h3 {
+.tool h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,6 +81,7 @@ header {
 
 .form-control label {
   display: block;
+  font-weight: bold;
 }
 
 .form-control input {
@@ -95,10 +96,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-bottom: 2rem;
 }
 
 .form-control-check label {
   flex: 1;
+  font-weight: 400;
+  margin-left: 1rem;
 }
 
 .form-control-check input {
